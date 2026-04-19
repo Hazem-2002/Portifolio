@@ -18,7 +18,7 @@ function App() {
       <section className="bg-gradient-to-r from-[#0F1A14] via-[#16251D] to-[#0F1A14] py-20">
         <Skills />
       </section>
-      <section className="py-20 bg-[#002200]">
+      <section className="py-20 bg-gradient-to-r from-[#0F1712] via-[#18231C] to-[#0F1712]">
         <Proficiency />
       </section>
     </>
