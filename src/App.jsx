@@ -2,6 +2,8 @@ import "./App.css";
 import Navbar from "./Navbar";
 import Hero from "./Hero";
 import About from "./About";
+import Skills from "./Skills";
+import Proficiency from "./Proficiency";
 
 function App() {
   return (
@@ -12,6 +14,12 @@ function App() {
       </main>
       <section className="py-20 bg-[#0F1A14]">
         <About />
+      </section>
+      <section className="bg-gradient-to-r from-[#0F1A14] via-[#16251D] to-[#0F1A14] py-20">
+        <Skills />
+      </section>
+      <section className="py-20 bg-[#002200]">
+        <Proficiency />
       </section>
     </>
   );

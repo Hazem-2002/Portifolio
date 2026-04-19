@@ -6,7 +6,7 @@ const About = () => {
     <div className="flex flex-col gap-14 items-center w-[80%] mx-auto">
       <AnimatedSection>
         <div className="flex flex-col gap-2 items-center">
-          <h2 className="text-3xl md:text-6xl font-bold">
+          <h2 className="text-4xl md:text-6xl font-bold">
             <span className="text-white/90">About </span>
             <span className="text-[#6B8E23]">Me</span>
           </h2>
@@ -77,7 +77,7 @@ const About = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 justify-center gap-6 w-[100%] md:w-full">
             {/* Name */}
-            <div className="flex flex-col items-center gap-3 p-4 md:p-6 shadow shadow-[0_0_3px_#99A1A0] hover:shadow-[0_0_10px_#6B8E23] transition duration-200 rounded-xl">
+            <div className="flex flex-col items-center gap-3 p-4 md:p-6 shadow shadow-[0_0_3px_#99A1A0] hover:shadow-[0_0_10px_#6B8E23] transition duration-250 rounded-xl">
               <div className="bg-[#6B8E23]/10 text-[#6B8E23] p-4 rounded-full">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -105,7 +105,7 @@ const About = () => {
             </div>
 
             {/* Email */}
-            <div className="flex flex-col items-center gap-3 p-4 md:p-6 shadow shadow-[0_0_3px_#99A1A0] hover:shadow-[0_0_10px_#6B8E23] transition duration-200 rounded-xl">
+            <div className="flex flex-col items-center gap-3 p-4 md:p-6 shadow shadow-[0_0_3px_#99A1A0] hover:shadow-[0_0_10px_#6B8E23] transition duration-250 rounded-xl">
               <div className="bg-[#6B8E23]/10 text-[#6B8E23] p-4 rounded-full">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -133,7 +133,7 @@ const About = () => {
             </div>
 
             {/* Location */}
-            <div className="flex flex-col items-center gap-3 p-4 md:p-6 shadow shadow-[0_0_3px_#99A1A0] hover:shadow-[0_0_10px_#6B8E23] transition duration-200 rounded-xl">
+            <div className="flex flex-col items-center gap-3 p-4 md:p-6 shadow shadow-[0_0_3px_#99A1A0] hover:shadow-[0_0_10px_#6B8E23] transition duration-250 rounded-xl">
               <div className="bg-[#6B8E23]/10 text-[#6B8E23] p-4 rounded-full">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -161,7 +161,7 @@ const About = () => {
             </div>
 
             {/* Status */}
-            <div className="flex flex-col items-center gap-3 p-4 md:p-6 shadow shadow-[0_0_3px_#99A1A0] hover:shadow-[0_0_10px_#6B8E23] transition duration-200 rounded-xl">
+            <div className="flex flex-col items-center gap-3 p-4 md:p-6 shadow shadow-[0_0_3px_#99A1A0] hover:shadow-[0_0_10px_#6B8E23] transition duration-250 rounded-xl">
               <div className="bg-[#6B8E23]/10 text-[#6B8E23] p-4 rounded-full">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

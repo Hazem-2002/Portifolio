@@ -135,7 +135,7 @@ export default function Navbar() {
       {/* Mobile Menu */}
 
       <div
-        className={`flex flex-col gap-6 lg:hidden bg-black/20 border-t border-white/10 px-6 overflow-hidden transition-all duration-300 ease-linear ${isOpen ? "max-h-96 py-4 opacity-100" : "max-h-0 py-0 opacity-0"}`}
+        className={`flex flex-col gap-6 lg:hidden bg-black/20 border-t border-b border-white/10 px-6 overflow-hidden transition-all duration-300 ease-linear ${isOpen ? "max-h-96 py-4 opacity-100" : "max-h-0 py-0 opacity-0"}`}
       >
         <nav className="flex lg:hidden flex-col gap-6 text-white/90 px-4 border-l border-gray-500/30">
           <a href="#home" className="font-semibold hover:text-[#9DB58A]">
