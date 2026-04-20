@@ -10,9 +10,9 @@ const Skills = () => {
           <h2 className="relative text-4xl md:text-6xl font-bold leading-none">
             <span className="text-white/90">My </span>
             <span className="text-[#6B8E23]">Skills</span>
-            <span className="absolute w-[35%] h-1 bg-[#6B8E23] -bottom-4 left-1/2 -translate-x-1/2"></span>
+            <span className="absolute w-[35%] h-1 bg-[#6B8E23] -bottom-3 md:-bottom-4 left-1/2 -translate-x-1/2"></span>
           </h2>
-          <p className="text-gray-400 text-base md:text-lg text-center">
+          <p className="text-gray-400/80 text-base md:text-lg text-center">
             I've worked with a variety of technologies in front-end development.
             <br />
             Here are some of my key areas of expertise:
@@ -20,9 +20,9 @@ const Skills = () => {
         </div>
       </AnimatedSection>
 
-      <AnimatedSection>
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
-          {/* Front-End Development */}
+      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+        {/* Front-End Development */}
+        <AnimatedSection>
           <div className="flex flex-col items-center p-6 shadow-[0_0_3px_#99A1A0] hover:shadow-[0_0_10px_#6B8E23] transition duration-250 rounded-xl">
             <div className="text-[#6B8E23] w-full mb-3">
               <svg
@@ -42,7 +42,7 @@ const Skills = () => {
               Front-End Development
             </h2>
 
-            <p className="text-gray-400 text-center leading-5 mb-4 text-sm">
+            <p className="text-gray-400/80 text-center leading-5 mb-4 text-sm">
               Building responsive and optimized web applications with modern
               frameworks.
             </p>
@@ -109,8 +109,10 @@ const Skills = () => {
               </span>
             </div>
           </div>
+        </AnimatedSection>
 
-          {/* Styling & UI Frameworks */}
+        {/* Styling & UI Frameworks */}
+        <AnimatedSection>
           <div className="flex flex-col items-center p-6 shadow-[0_0_3px_#99A1A0] hover:shadow-[0_0_10px_#6B8E23] transition duration-250 rounded-xl">
             <div className="text-[#6B8E23] w-full mb-3">
               <svg
@@ -202,8 +204,10 @@ const Skills = () => {
               </span>
             </div>
           </div>
+        </AnimatedSection>
 
-          {/* State Management */}
+        {/* State Management */}
+        <AnimatedSection>
           <div className="flex flex-col items-center p-6 shadow-[0_0_3px_#99A1A0] hover:shadow-[0_0_10px_#6B8E23] transition duration-250 rounded-xl">
             <div className="text-[#6B8E23] w-full mb-3">
               <svg
@@ -285,8 +289,10 @@ const Skills = () => {
               </span>
             </div>
           </div>
+        </AnimatedSection>
 
-          {/* Back-End Integration */}
+        {/* Back-End Integration */}
+        <AnimatedSection>
           <div className="flex flex-col items-center p-6 shadow-[0_0_3px_#99A1A0] hover:shadow-[0_0_10px_#6B8E23] transition duration-250 rounded-xl">
             <div className="text-[#6B8E23] w-full mb-3">
               <svg
@@ -334,8 +340,10 @@ const Skills = () => {
               </span>
             </div>
           </div>
+        </AnimatedSection>
 
-          {/* Development Tools */}
+        {/* Development Tools */}
+        <AnimatedSection>
           <div className="flex flex-col items-center p-6 shadow-[0_0_3px_#99A1A0] hover:shadow-[0_0_10px_#6B8E23] transition duration-250 rounded-xl">
             <div className="text-[#6B8E23] w-full mb-3">
               <svg
@@ -418,8 +426,10 @@ const Skills = () => {
               </span>
             </div>
           </div>
+        </AnimatedSection>
 
-          {/* Version Control & Deployment */}
+        {/* Version Control & Deployment */}
+        <AnimatedSection>
           <div className="flex flex-col items-center p-6 shadow-[0_0_3px_#99A1A0] hover:shadow-[0_0_10px_#6B8E23] transition duration-250 rounded-xl">
             <div className="text-[#6B8E23] w-full mb-3">
               <svg
@@ -503,8 +513,8 @@ const Skills = () => {
               </span>
             </div>
           </div>
-        </div>
-      </AnimatedSection>
+        </AnimatedSection>
+      </div>
     </div>
   );
 };

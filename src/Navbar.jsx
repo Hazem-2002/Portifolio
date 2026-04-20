@@ -1,11 +1,53 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [active, setActive] = useState("home");
+
+  /**
+   * Intersection Observer for active navbar link highlighting
+   * Tracks which section is currently in viewport and updates active state accordingly
+   * Used to sync navbar links with page scroll position (scroll spy behavior)
+   */
+  useEffect(() => {
+    const sections = document.querySelectorAll("section");
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActive(entry.target.id);
+          }
+        });
+      },
+      {
+        rootMargin: "-30% 0px -60% 0px",
+        threshold: 0,
+      },
+    );
+
+    sections.forEach((section) => observer.observe(section));
+
+    return () => {
+      sections.forEach((section) => observer.unobserve(section));
+    };
+  }, []);
+
+  useEffect(() => {
+    const handleClick = () => {
+      setIsOpen(false);
+    };
+
+    document.addEventListener("click", handleClick);
+
+    return () => {
+      document.removeEventListener("click", handleClick);
+    };
+  }, []);
 
   return (
     <header className="fixed top-0 left-0 w-full z-50 bg-gradient-to-r from-[#0F1A14]/90 via-[#16251D]/90 to-[#0F1A14]/90 backdrop-blur-md">
-      <div className="flex items-center justify-between w=full lg:w-[95%] xl:w-[80%] mx-auto px-8 py-4">
+      <div className="flex items-center justify-between w-full lg:w-[95%] xl:w-[80%] mx-auto px-8 py-4">
         {/* Logo */}
         <h1 className="text-white/85 text-2xl font-bold w-43">
           <span className="bg-gradient-to-r from-[#6B8E23] to-[#9DB58A] bg-clip-text text-transparent">
@@ -15,20 +57,35 @@ export default function Navbar() {
         </h1>
 
         {/* Desktop Menu */}
-        <nav className="hidden lg:flex items-center gap-8 text-white/90 shadow shadow-[#6B8E23] py-2 px-4 rounded-full">
-          <a href="#home" className="font-semibold hover:text-[#9DB58A]">
+        <nav className="hidden lg:flex items-center gap-8 shadow shadow-[#6B8E23] py-2 px-4 rounded-full">
+          <a
+            href="#home"
+            className={`font-semibold ${active === "home" ? "text-[#89A476] hover:text-[#89A476]" : "text-white/90 hover:text-white/80"}`}
+          >
             Home
           </a>
-          <a href="#about" className="font-semibold hover:text-[#9DB58A]">
+          <a
+            href="#about"
+            className={`font-semibold ${active === "about" ? "text-[#89A476] hover:text-[#89A476]" : "text-white/90 hover:text-white/80"}`}
+          >
             About
           </a>
-          <a href="#skills" className="font-semibold hover:text-[#9DB58A]">
+          <a
+            href="#skills"
+            className={`font-semibold hover:text-[#9DB58A] ${active === "skills" ? "text-[#89A476] hover:text-[#89A476]" : "text-white/90 hover:text-white/80"}`}
+          >
             Skills
           </a>
-          <a href="#skills" className="font-semibold hover:text-[#9DB58A]">
+          <a
+            href="#projects"
+            className={`font-semibold hover:text-[#9DB58A] ${active === "projects" ? "text-[#89A476] hover:text-[#89A476]" : "text-white/90 hover:text-white/80"}`}
+          >
             Projects
           </a>
-          <a href="#skills" className="font-semibold hover:text-[#9DB58A]">
+          <a
+            href="#contact"
+            className={`font-semibold hover:text-[#9DB58A] ${active === "contact" ? "text-[#89A476] hover:text-[#89A476]" : "text-white/90 hover:text-white/80"}`}
+          >
             Contact
           </a>
         </nav>
@@ -111,7 +168,10 @@ export default function Navbar() {
         {/* Mobile Button */}
         <button
           className="lg:hidden text-white cursor-pointer"
-          onClick={() => setIsOpen(!isOpen)}
+          onClick={(e) => {
+            e.stopPropagation();
+            setIsOpen(!isOpen);
+          }}
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -136,21 +196,42 @@ export default function Navbar() {
 
       <div
         className={`flex flex-col gap-6 lg:hidden bg-black/20 border-t border-b border-white/10 px-6 overflow-hidden transition-all duration-300 ease-linear ${isOpen ? "max-h-96 py-4 opacity-100" : "max-h-0 py-0 opacity-0"}`}
+        onClick={(e) => e.stopPropagation()}
       >
         <nav className="flex lg:hidden flex-col gap-6 text-white/90 px-4 border-l border-gray-500/30">
-          <a href="#home" className="font-semibold hover:text-[#9DB58A]">
+          <a
+            href="#home"
+            className={`font-semibold ${active === "home" ? "text-[#89A476] hover:text-[#89A476]" : "text-white/90 hover:text-white/80"}`}
+            onClick={() => setIsOpen(false)}
+          >
             Home
           </a>
-          <a href="#about" className="font-semibold hover:text-[#9DB58A]">
+          <a
+            href="#about"
+            className={`font-semibold ${active === "about" ? "text-[#89A476] hover:text-[#89A476]" : "text-white/90 hover:text-white/80"}`}
+            onClick={() => setIsOpen(false)}
+          >
             About
           </a>
-          <a href="#skills" className="font-semibold hover:text-[#9DB58A]">
+          <a
+            href="#skills"
+            className={`font-semibold hover:text-[#9DB58A] ${active === "skills" ? "text-[#89A476] hover:text-[#89A476]" : "text-white/90 hover:text-white/80"}`}
+            onClick={() => setIsOpen(false)}
+          >
             Skills
           </a>
-          <a href="#skills" className="font-semibold hover:text-[#9DB58A]">
+          <a
+            href="#projects"
+            className={`font-semibold hover:text-[#9DB58A] ${active === "projects" ? "text-[#89A476] hover:text-[#89A476]" : "text-white/90 hover:text-white/80"}`}
+            onClick={() => setIsOpen(false)}
+          >
             Projects
           </a>
-          <a href="#skills" className="font-semibold hover:text-[#9DB58A]">
+          <a
+            href="#contact"
+            className={`font-semibold hover:text-[#9DB58A] ${active === "contact" ? "text-[#89A476] hover:text-[#89A476]" : "text-white/90 hover:text-white/80"}`}
+            onClick={() => setIsOpen(false)}
+          >
             Contact
           </a>
         </nav>

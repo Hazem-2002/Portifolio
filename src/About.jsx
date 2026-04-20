@@ -10,7 +10,7 @@ const About = () => {
             <span className="text-white/90">About </span>
             <span className="text-[#6B8E23]">Me</span>
           </h2>
-          <p className="text-gray-400 text-base md:text-lg text-center">
+          <p className="text-gray-400/80 text-base md:text-lg text-center">
             Front-End Developer focused on modern web interfaces
           </p>
         </div>
@@ -69,14 +69,15 @@ const About = () => {
       </AnimatedSection>
 
       {/* Personal Info */}
-      <AnimatedSection>
-        <div className="flex flex-col w-full items-center gap-10">
-          <h2 className="text-xl md:text-2xl font-semibold text-white/90">
-            Personal Info
-          </h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 justify-center gap-6 w-[100%] md:w-full">
-            {/* Name */}
+      <div className="flex flex-col w-full items-center gap-10">
+        <h2 className="text-xl md:text-2xl font-semibold text-white/90">
+          Personal Info
+        </h2>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 justify-center gap-6 w-[100%] md:w-full">
+          {/* Name */}
+          <AnimatedSection>
             <div className="flex flex-col items-center gap-3 p-4 md:p-6 shadow shadow-[0_0_3px_#99A1A0] hover:shadow-[0_0_10px_#6B8E23] transition duration-250 rounded-xl">
               <div className="bg-[#6B8E23]/10 text-[#6B8E23] p-4 rounded-full">
                 <svg
@@ -103,8 +104,10 @@ const About = () => {
                 Hazem Mahmoud
               </h2>
             </div>
+          </AnimatedSection>
 
-            {/* Email */}
+          {/* Email */}
+          <AnimatedSection>
             <div className="flex flex-col items-center gap-3 p-4 md:p-6 shadow shadow-[0_0_3px_#99A1A0] hover:shadow-[0_0_10px_#6B8E23] transition duration-250 rounded-xl">
               <div className="bg-[#6B8E23]/10 text-[#6B8E23] p-4 rounded-full">
                 <svg
@@ -131,8 +134,10 @@ const About = () => {
                 hazem.mahmoud.dev@gmail.com
               </h2>
             </div>
+          </AnimatedSection>
 
-            {/* Location */}
+          {/* Location */}
+          <AnimatedSection>
             <div className="flex flex-col items-center gap-3 p-4 md:p-6 shadow shadow-[0_0_3px_#99A1A0] hover:shadow-[0_0_10px_#6B8E23] transition duration-250 rounded-xl">
               <div className="bg-[#6B8E23]/10 text-[#6B8E23] p-4 rounded-full">
                 <svg
@@ -159,8 +164,10 @@ const About = () => {
                 Egypt/Mansoura
               </h2>
             </div>
+          </AnimatedSection>
 
-            {/* Status */}
+          {/* Status */}
+          <AnimatedSection>
             <div className="flex flex-col items-center gap-3 p-4 md:p-6 shadow shadow-[0_0_3px_#99A1A0] hover:shadow-[0_0_10px_#6B8E23] transition duration-250 rounded-xl">
               <div className="bg-[#6B8E23]/10 text-[#6B8E23] p-4 rounded-full">
                 <svg
@@ -187,9 +194,9 @@ const About = () => {
                 Open to opportunities
               </h2>
             </div>
-          </div>
+          </AnimatedSection>
         </div>
-      </AnimatedSection>
+      </div>
     </div>
   );
 };

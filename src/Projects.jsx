@@ -97,13 +97,13 @@ const Projects = () => {
     <div className="w-[80%] lg:w-[90%] mx-auto">
       {/* Title */}
       <AnimatedSection>
-        <div className="flex flex-col gap-8 items-center mb-18">
+        <div className="flex flex-col gap-14 items-center mb-12">
           <h2 className="relative text-4xl md:text-6xl font-bold leading-none">
             <span className="text-white/90">My </span>
             <span className="text-[#6B8E23]">Projects</span>
-            <span className="absolute w-[35%] h-1 bg-[#6B8E23] -bottom-6 left-1/2 -translate-x-1/2"></span>
+            <span className="absolute w-[35%] h-1 bg-[#6B8E23] -bottom-5 md:-bottom-6 left-1/2 -translate-x-1/2"></span>
           </h2>
-          <p className="text-gray-400 text-base md:text-lg text-center">
+          <p className="text-gray-400/80 text-base md:text-lg text-center">
             A collection of my work showcasing modern, responsive web
             applications
             <br />
