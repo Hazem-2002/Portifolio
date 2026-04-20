@@ -11,7 +11,7 @@ const Contact = () => {
             <span className="text-[#6B8E23]">Work Together</span>
             <span className="absolute w-[35%] h-1 bg-[#6B8E23] -bottom-5 left-1/2 -translate-x-1/2"></span>
           </h2>
-          <p className="text-gray-400/80 text-base md:text-lg text-center">
+          <p className="text-white/60 text-base md:text-lg text-center">
             Have a project in mind? I'd love to hear about it.
             <br />
             Drop me a message and let's create something amazing.
@@ -104,7 +104,7 @@ const Contact = () => {
                   rel="noopener noreferrer"
                   className="flex items-center gap-4 p-4 rounded-xl bg-[#3B5445]/8 border border-[#3B5445]/20 hover:border-[#3B5445]/50 hover:translate-x-[10px] will-change-transform transition-all duration-300 group"
                 >
-                  <div className="w-12 h-12 rounded-lg bg-[#3B5445]/15 flex items-center justify-center text-slate-300 group-hover:bg-[#3B5445]/30 transition-colors">
+                  <div className="w-12 h-12 rounded-lg bg-[#3B5445]/15 flex items-center justify-center text-slate-300 group-hover:bg-[#3B5445]/30 transition-colors shrink-0">
                     <svg
                       stroke="currentColor"
                       fill="currentColor"
@@ -124,7 +124,7 @@ const Contact = () => {
                       GitHub
                     </p>
 
-                    <p className="text-sm text-gray-400/80">
+                    <p className="text-sm line-clamp-1 break-all text-white/55">
                       github.com/Hazem-2002
                     </p>
                   </div>
@@ -136,7 +136,7 @@ const Contact = () => {
                   rel="noopener noreferrer"
                   className="flex items-center gap-4 p-4 rounded-xl bg-[#3B5445]/8 border border-[#3B5445]/20 hover:border-[#3B5445]/50 hover:translate-x-[10px] will-change-transform transition-all duration-300 group"
                 >
-                  <div className="w-12 h-12 rounded-lg bg-[#3B5445]/15 flex items-center justify-center text-slate-300 group-hover:bg-[#3B5445]/30 transition-colors">
+                  <div className="w-12 h-12 rounded-lg bg-[#3B5445]/15 flex items-center justify-center text-slate-300 group-hover:bg-[#3B5445]/30 transition-colors shrink-0">
                     <svg
                       stroke="currentColor"
                       fill="currentColor"
@@ -155,7 +155,7 @@ const Contact = () => {
                     <p className="font-medium text-slate-200 group-hover:text-[#6B8E23] transition-colors">
                       LinkedIn
                     </p>
-                    <p className="text-sm text-gray-400/80">
+                    <p className="text-sm line-clamp-1 break-all text-white/55">
                       linkedin.com/in/-hazemmahmoud
                     </p>
                   </div>
@@ -166,7 +166,7 @@ const Contact = () => {
                   rel="noopener noreferrer"
                   className="flex items-center gap-4 p-4 rounded-xl bg-[#3B5445]/8 border border-[#3B5445]/20 hover:border-[#3B5445]/50 hover:translate-x-[10px] will-change-transform transition-all duration-300 group"
                 >
-                  <div className="w-12 h-12 rounded-lg bg-[#3B5445]/15 flex items-center justify-center text-slate-300 group-hover:bg-[#3B5445]/30 transition-colors">
+                  <div className="w-12 h-12 rounded-lg bg-[#3B5445]/15 flex items-center justify-center text-slate-300 group-hover:bg-[#3B5445]/30 transition-colors shrink-0">
                     <svg
                       stroke="currentColor"
                       fill="currentColor"
@@ -185,7 +185,7 @@ const Contact = () => {
                     <p className="font-medium text-slate-200 group-hover:text-[#6B8E23] transition-colors">
                       Email
                     </p>
-                    <p className="text-sm text-gray-400/80">
+                    <p className="text-sm line-clamp-1 break-all text-white/55">
                       hazem.mahmoud.dev@gmail.com
                     </p>
                   </div>
@@ -196,12 +196,12 @@ const Contact = () => {
               <h4 className="text-lg font-semibold text-slate-100 mb-3">
                 Quick Response
               </h4>
-              <p className="text-sm text-gray-400/80 leading-relaxed">
+              <p className="text-sm text-white/55 leading-relaxed">
                 I typically respond within 24 hours. For urgent inquiries, feel
                 free to reach out via email directly.
               </p>
             </div>
-            <div className="flex items-center gap-3 p-4 rounded-xl bg-[#3B5445]/8 border border-[#3B5445]/20">
+            <div className="flex items-center justify-center md:justify-start gap-3 p-4 rounded-xl bg-[#3B5445]/8 border border-[#3B5445]/20">
               <div className="relative flex h-3 w-3">
                 <span className="animate-ping absolute z-1 inline-flex h-full w-full rounded-full bg-emerald-600 opacity-75"></span>
                 <span className="relative z-10 inline-flex rounded-full h-3 w-3 bg-emerald-700"></span>

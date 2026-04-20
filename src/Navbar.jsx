@@ -45,6 +45,18 @@ export default function Navbar() {
     };
   }, []);
 
+  useEffect(() => {
+    if (isOpen) {
+      document.body.classList.add("overflow-hidden");
+    } else {
+      document.body.classList.remove("overflow-hidden");
+    }
+
+    return () => {
+      document.body.classList.remove("overflow-hidden");
+    };
+  }, [isOpen]);
+
   return (
     <header className="fixed top-0 left-0 w-full z-50 bg-gradient-to-r from-[#0F1A14]/90 via-[#16251D]/90 to-[#0F1A14]/90 backdrop-blur-md">
       <div className="flex items-center justify-between w-full lg:w-[95%] xl:w-[80%] mx-auto px-8 py-4">

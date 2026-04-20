@@ -10,7 +10,7 @@ const About = () => {
             <span className="text-white/90">About </span>
             <span className="text-[#6B8E23]">Me</span>
           </h2>
-          <p className="text-gray-400/80 text-base md:text-lg text-center">
+          <p className="text-white/60 text-base md:text-lg text-center">
             Front-End Developer focused on modern web interfaces
           </p>
         </div>
@@ -54,7 +54,7 @@ const About = () => {
               </h2>
 
               {/* Summary */}
-              <p className="text-gray-400 leading-relaxed text-center md:text-start">
+              <p className="text-white/55 leading-relaxed text-center md:text-start">
                 I'm a{" "}
                 <span className="text-[#6B8E23]">Front-End Developer</span>{" "}
                 specialized in building responsive and user-friendly interfaces
@@ -96,7 +96,7 @@ const About = () => {
                 </svg>
               </div>
 
-              <h2 className="text-sm sm:text-base font-normal text-gray-400 leading-none">
+              <h2 className="text-sm sm:text-base font-normal text-white/55 leading-none">
                 Name
               </h2>
 
@@ -126,7 +126,7 @@ const About = () => {
                 </svg>
               </div>
 
-              <h2 className="text-sm sm:text-base font-normal text-gray-400 leading-none">
+              <h2 className="text-sm sm:text-base font-normal text-white/55 leading-none">
                 Email
               </h2>
 
@@ -156,7 +156,7 @@ const About = () => {
                 </svg>
               </div>
 
-              <h2 className="text-sm sm:text-base font-normal text-gray-400 leading-none">
+              <h2 className="text-sm sm:text-base font-normal text-white/55 leading-none">
                 Location
               </h2>
 
@@ -186,7 +186,7 @@ const About = () => {
                 </svg>
               </div>
 
-              <h2 className="text-sm sm:text-base font-normal text-gray-400 leading-none">
+              <h2 className="text-sm sm:text-base font-normal text-white/55 leading-none">
                 Status
               </h2>
 

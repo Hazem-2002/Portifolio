@@ -12,7 +12,7 @@ const Skills = () => {
             <span className="text-[#6B8E23]">Skills</span>
             <span className="absolute w-[35%] h-1 bg-[#6B8E23] -bottom-3 md:-bottom-4 left-1/2 -translate-x-1/2"></span>
           </h2>
-          <p className="text-gray-400/80 text-base md:text-lg text-center">
+          <p className="text-white/60 text-base md:text-lg text-center">
             I've worked with a variety of technologies in front-end development.
             <br />
             Here are some of my key areas of expertise:
@@ -42,7 +42,7 @@ const Skills = () => {
               Front-End Development
             </h2>
 
-            <p className="text-gray-400/80 text-center leading-5 mb-4 text-sm">
+            <p className="text-white/55 text-center leading-5 mb-4 text-sm">
               Building responsive and optimized web applications with modern
               frameworks.
             </p>
@@ -137,7 +137,7 @@ const Skills = () => {
               Styling & UI Frameworks
             </h2>
 
-            <p className="text-gray-400 text-center leading-5 mb-4 text-sm">
+            <p className="text-white/55 text-center leading-5 mb-4 text-sm">
               Crafting modern and maintainable UI components with efficient
               styling techniques.
             </p>
@@ -233,7 +233,7 @@ const Skills = () => {
               State Management
             </h2>
 
-            <p className="text-gray-400 text-center leading-5 mb-4 text-sm">
+            <p className="text-white/55 text-center leading-5 mb-4 text-sm">
               Handling application state efficiently for scalable applications.
             </p>
 
@@ -318,7 +318,7 @@ const Skills = () => {
               Back-End Integration
             </h2>
 
-            <p className="text-gray-400 text-center leading-5 mb-4 text-sm">
+            <p className="text-white/55 text-center leading-5 mb-4 text-sm">
               Connecting front-end applications to databases and back-end
               services.
             </p>
@@ -368,7 +368,7 @@ const Skills = () => {
               Development Tools
             </h2>
 
-            <p className="text-gray-400 text-center leading-5 mb-4 text-sm">
+            <p className="text-white/55 text-center leading-5 mb-4 text-sm">
               Optimizing workflows with modern development and build tools.
             </p>
 
@@ -456,7 +456,7 @@ const Skills = () => {
               Version Control & Deployment
             </h2>
 
-            <p className="text-gray-400 text-center leading-5 mb-4 text-sm">
+            <p className="text-white/55 text-center leading-5 mb-4 text-sm">
               Managing code collaboration and deploying applications
               efficiently.
             </p>
