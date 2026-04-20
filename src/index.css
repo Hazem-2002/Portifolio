@@ -1,13 +1,5 @@
 @import "tailwindcss";
 
-body {
-  background: #0f1a14;
-  scroll-behavior: smooth;
-}
-html {
-  scroll-behavior: smooth;
-}
-
 div.swiper-button-prev,
 div.swiper-button-next {
   width: 40px;

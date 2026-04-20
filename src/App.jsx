@@ -50,7 +50,7 @@ function App() {
         </section>
       </main>
 
-      <footer class="py-10 bg-gradient-to-r from-[#101A14] via-[#18241D] to-[#101A14] border-t border-[#1F2D25]">
+      <footer class="py-10 bg-gradient-to-r from-[#0B120E] via-[#121C16] to-[#0B120E] border-t border-[#1F2D25]">
         <Footer />
       </footer>
     </>
