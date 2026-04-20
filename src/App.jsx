@@ -4,6 +4,7 @@ import Hero from "./Hero";
 import About from "./About";
 import Skills from "./Skills";
 import Proficiency from "./Proficiency";
+import Projects from "./Projects";
 
 function App() {
   return (
@@ -20,6 +21,9 @@ function App() {
       </section>
       <section className="py-20 bg-gradient-to-r from-[#0F1712] via-[#18231C] to-[#0F1712]">
         <Proficiency />
+      </section>
+      <section className="min-h-screen py-20 bg-[#0F1A14]">
+        <Projects />
       </section>
     </>
   );
