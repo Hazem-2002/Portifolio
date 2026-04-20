@@ -1,6 +1,14 @@
 import React from "react";
 import AnimatedSection from "./AnimatedSection";
 import { useState } from "react";
+import weatherImg from "./assets/weather-app.png";
+import NexoraImg from "./assets/Tailwind-Landing-Page.png";
+import TodoListImg from "./assets/Todo-List-App.png";
+import AccessoriesStoreImg from "./assets/E-commerce-JavaScript.png";
+import MobileStoreImg from "./assets/E-commerce-Mobile-Store.png";
+import TastyBitesRestaurantImg from "./assets/Tasty-Bites-Restaurant.png";
+import FashionClothingStoreImg from "./assets/clothing-store-app.png";
+import DigitalMarketingImg from "./assets/digital-marketing-app.png";
 
 const ProjectsData = [
   {
@@ -16,7 +24,7 @@ const ProjectsData = [
     ],
     liveDemo: "https://hazem-2002.github.io/Weather-App/",
     code: "https://github.com/Hazem-2002/Weather-App",
-    imageSource: "./assets/weather-app.png",
+    imageSource: weatherImg,
   },
   {
     title: "Nexora",
@@ -25,7 +33,7 @@ const ProjectsData = [
     technologies: ["HTML5", "CSS3", "Tailwind CSS"],
     liveDemo: "https://hazem-2002.github.io/Tailwind-Responsive-Landing-Page/",
     code: "https://github.com/Hazem-2002/Tailwind-Responsive-Landing-Page",
-    imageSource: "./assets/Tailwind-Landing-Page.png",
+    imageSource: NexoraImg,
   },
   {
     title: "Todo List",
@@ -34,7 +42,7 @@ const ProjectsData = [
     technologies: ["React.js", "Material UI", "CSS3"],
     liveDemo: "https://hazem-2002.github.io/Todo-List-App/",
     code: "https://github.com/Hazem-2002/Todo-List-App",
-    imageSource: "./assets/Todo-List-App.png",
+    imageSource: TodoListImg,
   },
   {
     title: "Accessories Store",
@@ -43,7 +51,7 @@ const ProjectsData = [
     technologies: ["HTML5", "CSS3", "JavaScript"],
     liveDemo: "https://hazem-2002.github.io/E-Commerce-Accessories/",
     code: "https://github.com/Hazem-2002/E-Commerce-Accessories",
-    imageSource: "./assets/E-commerce-JavaScript.png",
+    imageSource: AccessoriesStoreImg,
   },
   {
     title: "Mobile Store",
@@ -52,7 +60,7 @@ const ProjectsData = [
     technologies: ["HTML5", "CSS3", "JavaScript"],
     liveDemo: "https://hazem-2002.github.io/Mobile-Store/",
     code: "https://github.com/Hazem-2002/Mobile-Store",
-    imageSource: "./assets/E-commerce-Mobile-Store.png",
+    imageSource: MobileStoreImg,
   },
   {
     title: "Tasty Bites Restaurant",
@@ -61,7 +69,7 @@ const ProjectsData = [
     technologies: ["HTML5", "CSS3", "Bootstrap"],
     liveDemo: "https://hazem-2002.github.io/Tasty-Bites-Restaurant/",
     code: "https://github.com/Hazem-2002/Tasty-Bites-Restaurant",
-    imageSource: "./assets/Tasty-Bites-Restaurant.png",
+    imageSource: TastyBitesRestaurantImg,
   },
   {
     title: "Fashion Clothing Store",
@@ -70,7 +78,7 @@ const ProjectsData = [
     technologies: ["HTML5", "CSS3"],
     liveDemo: "https://hazem-2002.github.io/Static-Clothing-Store/",
     code: "https://github.com/Hazem-2002/Static-Clothing-Store",
-    imageSource: "./assets/clothing-store-app.png",
+    imageSource: FashionClothingStoreImg,
   },
   {
     title: "Digital Marketing",
@@ -79,7 +87,7 @@ const ProjectsData = [
     technologies: ["HTML", "CSS"],
     liveDemo: "https://hazem-2002.github.io/digital-marketing-website/",
     code: "https://github.com/Hazem-2002/digital-marketing-website",
-    imageSource: "./assets/digital-marketing-app.png",
+    imageSource: DigitalMarketingImg,
   },
 ];
 
@@ -161,7 +169,8 @@ const Projects = () => {
               {/* Image */}
               <div className="relative aspect-4/3 overflow-hidden">
                 <div
-                  className={`w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-110 bg-[url('${project.imageSource}')] will-change-transform`}
+                  className="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-110 will-change-transform"
+                  style={{ backgroundImage: `url(${project.imageSource})` }}
                 ></div>
                 <div className="absolute inset-0 bg-black/30 group-hover:bg-black/80 transition-all duration-500"></div>
                 <div className="absolute inset-0 flex items-center justify-center gap-3 opacity-0 group-hover:opacity-100 transition-opacity duration-500 p-4">
