@@ -1,6 +1,7 @@
+import React from "react";
 import { useState, useEffect } from "react";
 
-export default function Navbar() {
+function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [active, setActive] = useState("home");
 
@@ -108,7 +109,7 @@ export default function Navbar() {
 
         <div className="hidden lg:flex items-center space-x-5 shadow shadow-gray-600/40 py-2 px-4 rounded-full">
           <a
-            href="https://github.com/Hazem-2002q"
+            href="https://github.com/Hazem-2002"
             target="_blank"
             rel="noopener noreferrer"
             className="text-[#8b949e] hover:text-[#6B8E23] transition-all hover:scale-120 duration-200"
@@ -331,3 +332,5 @@ export default function Navbar() {
     </header>
   );
 }
+
+export default React.memo(Navbar);

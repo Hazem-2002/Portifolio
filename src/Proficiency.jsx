@@ -61,4 +61,4 @@ const Proficiency = () => {
   );
 };
 
-export default Proficiency;
+export default React.memo(Proficiency);

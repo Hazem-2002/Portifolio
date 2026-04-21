@@ -1,3 +1,5 @@
+import React from "react";
+
 const ProgressCircle = ({ percentage, label }) => {
   return (
     <div className="flex flex-col items-center gap-2 py-2 p-0">
@@ -18,4 +20,4 @@ const ProgressCircle = ({ percentage, label }) => {
   );
 };
 
-export default ProgressCircle;
+export default React.memo(ProgressCircle);
