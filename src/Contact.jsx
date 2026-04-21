@@ -9,7 +9,7 @@ const Contact = () => {
           <h2 className="relative text-2xl md:text-5xl font-bold leading-none">
             <span className="text-white/80">Let's </span>
             <span className="text-[#6B8E23]">Work Together</span>
-            <span className="absolute w-[35%] h-1 bg-[#6B8E23] -bottom-5 left-1/2 -translate-x-1/2"></span>
+            <span className="absolute w-[35%] h-1 bg-[#6B8E23] -bottom-4 md:-bottom-5 left-1/2 -translate-x-1/2"></span>
           </h2>
           <p className="text-white/60 text-base md:text-lg text-center">
             Have a project in mind? I'd love to hear about it.
@@ -206,7 +206,7 @@ const Contact = () => {
                 <span className="animate-ping absolute z-1 inline-flex h-full w-full rounded-full bg-emerald-600 opacity-75"></span>
                 <span className="relative z-10 inline-flex rounded-full h-3 w-3 bg-emerald-700"></span>
               </div>
-              <span className="text-sm text-slate-300">
+              <span className="text-sm text-white/85">
                 Available for freelance projects
               </span>
             </div>

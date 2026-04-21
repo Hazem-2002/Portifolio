@@ -34,14 +34,18 @@ export default function Navbar() {
   }, []);
 
   useEffect(() => {
-    const handleClick = () => {
-      setIsOpen(false);
-    };
+    const closeMenu = () => setIsOpen(false);
 
-    document.addEventListener("click", handleClick);
+    document.addEventListener("click", closeMenu);
+
+    document.addEventListener("touchstart", closeMenu);
+
+    document.addEventListener("pointerdown", closeMenu);
 
     return () => {
-      document.removeEventListener("click", handleClick);
+      document.removeEventListener("click", closeMenu);
+      document.removeEventListener("touchstart", closeMenu);
+      document.removeEventListener("pointerdown", closeMenu);
     };
   }, []);
 
@@ -107,7 +111,7 @@ export default function Navbar() {
             href="https://github.com/Hazem-2002q"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-400 hover:text-[#6B8E23] transition-all hover:scale-120 duration-200"
+            className="text-[#8b949e] hover:text-[#6B8E23] transition-all hover:scale-120 duration-200"
           >
             <svg
               stroke="currentColor"
@@ -125,7 +129,7 @@ export default function Navbar() {
             href="https://www.linkedin.com/in/-hazemmahmoud/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-400 hover:text-[#6B8E23] transition-all hover:scale-120 duration-200"
+            className="text-[#8b949e] hover:text-[#6B8E23] transition-all hover:scale-120 duration-200"
           >
             <svg
               stroke="currentColor"
@@ -143,7 +147,7 @@ export default function Navbar() {
             href="https://web.facebook.com/Hazm2002"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-400 hover:text-[#6B8E23] transition-all hover:scale-120 duration-200"
+            className="text-[#8b949e] hover:text-[#6B8E23] transition-all hover:scale-120 duration-200"
           >
             <svg
               stroke="currentColor"
@@ -161,7 +165,7 @@ export default function Navbar() {
             href="https://wa.me/201023612348"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-400 hover:text-[#6B8E23] transition-all hover:scale-120 duration-200"
+            className="text-[#8b949e] hover:text-[#6B8E23] transition-all hover:scale-120 duration-200"
           >
             <svg
               stroke="currentColor"
@@ -253,7 +257,7 @@ export default function Navbar() {
             href="https://github.com/Hazem-2002"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-400 hover:text-[#6B8E23] transition-all hover:scale-120 duration-200"
+            className="text-[#8b949e] hover:text-[#6B8E23] transition-all hover:scale-120 duration-200"
           >
             <svg
               stroke="currentColor"
@@ -272,7 +276,7 @@ export default function Navbar() {
             href="https://www.linkedin.com/in/-hazemmahmoud/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-400 hover:text-[#6B8E23] transition-all hover:scale-120 duration-200"
+            className="text-[#8b949e] hover:text-[#6B8E23] transition-all hover:scale-120 duration-200"
           >
             <svg
               stroke="currentColor"
@@ -290,7 +294,7 @@ export default function Navbar() {
             href="https://web.facebook.com/Hazm2002"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-400 hover:text-[#6B8E23] transition-all hover:scale-120 duration-200"
+            className="text-[#8b949e] hover:text-[#6B8E23] transition-all hover:scale-120 duration-200"
           >
             <svg
               stroke="currentColor"
@@ -308,7 +312,7 @@ export default function Navbar() {
             href="https://wa.me/201023612348"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-400 hover:text-[#6B8E23] transition-all hover:scale-120 duration-200"
+            className="text-[#8b949e] hover:text-[#6B8E23] transition-all hover:scale-120 duration-200"
           >
             <svg
               stroke="currentColor"
